@@ -2,26 +2,67 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title> 오늘의 투두 </title>
+        <title> 오늘의 투 두 </title>
+        <script src="todo.js"></script>
+        <style>
+
+         #title {
+            color: bisque;
+            text-decoration: underline;
+         }
+
+         .wrap {
+            display: flex;
+            
+         }
+         
+         #msbox {
+            border: 1px solid gray;
+            padding: 2em;
+            margin: 1em;
+            border-radius: 5px; 
+         }
+
+         button {
+            width: calc(80% - 20px);
+         }
+
+         button:hover {
+            background-color: orange;
+         }
+        </style>
+
+        <script>
+
+        </script>
     </head>
     <body>
-        <h1>오늘 할 일</h1>
-        <div>
-            <h3>고양이 밥주기</h3>
-            <p>고양이 물, 사료 챙겨주기</p>
-            <button>완료</button>
+        <h1 id="title">오늘 할 일</h1>
+        <div class="wrap">
+            <div id="msbox">
+                <h3>고양이 밥주기</h3>
+                <p>고양이 물, 사료 챙겨주기</p>
+                <button>완료</button>
+            </div>
+            <div id="msbox">
+                <h3>고양이 밥주기</h3>
+                <p>고양이 물, 사료 챙겨주기</p>
+                <button>완료</button>
+            </div>
         </div>
 
-        <div>
-            <h2>장보기</h2>
-            <p>토마토, 계란, 초코렛 사기</p>
-            <button>완료</button>
-        </div>
-        
-        <div>
-            <h2>코딩하기</h2>
-            <p>리액트 강의 1주차 듣기</p>
-            <button>완료</button>
+        <div class="wrap">
+            <div id="msbox">
+                <h3>장보기</h3>
+                <p>토마토, 계란, 초코렛 사기</p>
+                <button>완료</button>
+            </div>
+            
+            <div id="msbox">
+                <h3>코딩하기</h3>
+                <p>리액트 강의 1주차 듣기</p>
+                <button>완료</button>
+            </div>
         </div>
     </body>
 </html>
